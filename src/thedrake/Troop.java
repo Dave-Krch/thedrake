@@ -1,3 +1,5 @@
+package thedrake;
+
 public class Troop {
     private final String name;
 
@@ -26,7 +28,7 @@ public class Troop {
     }
 
     public Offset2D pivot(TroopFace face) {
-        if(face == TroopFace.AVERSE)
+        if(face == TroopFace.AVERS)
             return aversPivot;
         else
             return reversPivot;

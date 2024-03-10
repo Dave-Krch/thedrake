@@ -1,3 +1,5 @@
+package thedrake;
+
 //movement in 2D space
 public class Offset2D {
     public final int x, y;
