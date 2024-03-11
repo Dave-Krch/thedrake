@@ -1,8 +1,8 @@
 package thedrake;
 
-public class Board implements Cloneable {
+public class Board {
 
-    public final int dimension;
+    private final int dimension;
 
     private final BoardTile[][] board;
 
@@ -12,9 +12,11 @@ public class Board implements Cloneable {
 
         board = new BoardTile[dimension][dimension];
 
-        for(BoardTile[] row: board)
-            for (BoardTile tile: row)
-                tile = BoardTile.EMPTY;
+        for(int i = 0; i < dimension; i++) {
+            for(int j = 0; j < dimension; j++) {
+                this.board[i][j] = BoardTile.EMPTY;
+            }
+        }
     }
 
     // Rozměr hrací desky
